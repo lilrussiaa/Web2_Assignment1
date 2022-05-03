@@ -139,11 +139,11 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/deploy\/img\/search\/Search Icon.svg" : {
+    "\/deploy\/img\/search\/SearchIcon.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/deploy\/img\/search\/Search Icon.svg",
+      "oAP" : "\/deploy\/img\/search\/SearchIcon.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
