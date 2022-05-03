@@ -489,7 +489,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_hero&links.scss" : {
+    "\/dev\/scss\/sections\/_heroandlinks.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -498,7 +498,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_hero&links.css",
+      "oAP" : "\/dev\/scss\/sections\/_heroandlinks.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -534,7 +534,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_tips&tricks.scss" : {
+    "\/dev\/scss\/sections\/_tipsandtricks.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -543,7 +543,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_tips&tricks.css",
+      "oAP" : "\/dev\/scss\/sections\/_tipsandtricks.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
