@@ -382,9 +382,17 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  background-color: #482E54;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #482E54;
+}
+
 /* =============
     Cards
 ============= */
