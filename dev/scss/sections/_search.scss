@@ -2,16 +2,13 @@
     Search
 ============= */
 #search{
-    section{
-        form{
-            button{
-                img{
-                     
-                }
+    >div{
+        section{
+            display: grid;
+            grid-template-columns: 15% auto;
 
-            }
-            input{
-                
+            img{
+                width: 100%;
             }
         }
     }

@@ -402,16 +402,9 @@ textarea {
 header {
   background-color: #482E54;
 }
-header > div section img {
-  width: 36%;
-}
-
 /* =============
     Footer
 ============= */
-footer {
-  background-color: #482E54;
-}
 footer > div #locations ul li section {
   display: grid;
   grid-template-columns: 15% auto;
@@ -434,12 +427,9 @@ footer > div #locations ul li section {
 #heroandlinks img {
   width: 100%;
 }
-#heroandlinks #tips > div section {
+#heroandlinks > div #tips {
   display: grid;
-  grid-template-columns: 25% auto;
-}
-#heroandlinks #tips > div section img {
-  width: 100%;
+  grid-template-columns: 15% auto;
 }
 
 /* =============

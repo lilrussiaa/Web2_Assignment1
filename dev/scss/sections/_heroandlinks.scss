@@ -1,18 +1,25 @@
 /* =============
     Heroandlinks
 ============= */
-#heroandlinks{
+#heroandlinks {
 
-    img{ 
+    img {
         width: 100%;
 
     }
-}
-section{
-    h2{
 
-    }
-    button{
+    #tips{
 
+        >div{
+            section{
+                display: grid;
+                grid-template-columns: 25% auto;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
     }
+
 }

@@ -2,20 +2,21 @@
     Base
 ============= */
 
-ul{
+ul {
     padding: 0;
     margin: 0;
-    li{
+
+    li {
         list-style: none;
     }
 }
 
-.global-css-grid{
+.global-css-grid {
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". grid-global .";
 
-    >div{
+    >div {
         grid-area: grid-global;
     }
 }
