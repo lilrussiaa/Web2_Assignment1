@@ -352,6 +352,23 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
+.global-css-grid {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". grid-global .";
+}
+.global-css-grid > div {
+  grid-area: grid-global;
+}
+
 /* =============
     Typography
 ============= */
@@ -385,16 +402,6 @@ textarea {
 header {
   background-color: #482E54;
 }
-header Section {
-  width: 768px;
-  height: 77px;
-}
-header Section img {
-  margin: 16px;
-  width: 99px;
-  height: 48px;
-}
-
 /* =============
     Footer
 ============= */
