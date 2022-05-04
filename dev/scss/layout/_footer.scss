@@ -2,5 +2,19 @@
     Footer
 ============= */
 footer{
-    background-color: #482E54;
+
+    >div{
+        
+        #locations{
+
+            ul{
+                li{
+                    section{
+                        display: grid;
+                        grid-template-columns: 15% auto;
+                    }
+                }
+            }
+        }
+    }
 }

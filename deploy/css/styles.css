@@ -405,8 +405,9 @@ header {
 /* =============
     Footer
 ============= */
-footer {
-  background-color: #482E54;
+footer > div #locations ul li section {
+  display: grid;
+  grid-template-columns: 15% auto;
 }
 
 /* =============
