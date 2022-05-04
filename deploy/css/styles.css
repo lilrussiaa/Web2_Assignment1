@@ -412,6 +412,14 @@ footer {
 /* =============
     Cards
 ============= */
+.card-content > div {
+  display: grid;
+  grid-template-columns: 75% auto;
+}
+.card-content > div aside img {
+  width: 100%;
+}
+
 /* =============
     Heroandlinks
 ============= */
@@ -432,3 +440,6 @@ footer {
 /* =============
     Tipsandtricks
 ============= */
+#tipsandtricks ul li img {
+  width: 100%;
+}
