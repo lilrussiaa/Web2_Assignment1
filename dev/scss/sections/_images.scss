@@ -1,21 +1,60 @@
 /* =============
     Images
 ============= */
-#images{
-ul{
+#images {
 
-    @include md{
-      display: grid;
-      grid-template-columns: 50% auto;  
-    }
-    @include lg{
-        grid-template-columns: 50% auto;  
-      }
-    li{
-        img{
-            width: 100%;
-    
+@include xxl{
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". images .";
+}
+
+    ul {
+
+        @include md {
+            display: grid;
+            grid-template-columns: 50% auto;
+        }
+
+        @include lg {
+            grid-template-columns: 65% auto;
+        }
+
+        @include xl {
+            grid-template-columns: 60% auto;
+            grid-template-areas:
+                "gr1 gr2"
+                "gr1 gr3";
+        }
+
+@include xxl{
+    grid-area:images;
+}
+
+        li {
+            img {
+                width: 100%;
+
+            }
+
+            #gr1 {
+                @include xl {
+                    grid-area: gr1;
+                }
+            }
+
+            #gr2 {
+                @include xl {
+                    grid-area: gr2;
+                }
+            }
+
+            #gr3 {
+                @include xl {
+                    grid-area: gr3;
+                }
+            }
+
         }
     }
-}
 }

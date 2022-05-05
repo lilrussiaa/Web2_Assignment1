@@ -365,7 +365,7 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". grid-global .";
 }
-@media (min-width: 1440px) {
+@media (min-width: 1200px) {
   .global-css-grid {
     grid-template-columns: auto 1440px auto;
   }
@@ -444,9 +444,40 @@ header > div section img {
 footer {
   background-color: #482E54;
 }
+footer > div {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  footer > div {
+    grid-template-columns: 50% auto;
+    grid-template-areas: " locations subscribe" "social . ";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: " locations subscribe social";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #locations {
+    grid-area: locations;
+  }
+}
 footer > div #locations ul li section {
   display: grid;
-  grid-template-columns: 15% auto;
+  grid-template-columns: 10% auto;
+}
+@media (min-width: 768px) {
+  footer > div #subscribe {
+    grid-area: subscribe;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #social {
+    grid-area: social;
+  }
 }
 
 /* =============
@@ -513,6 +544,13 @@ footer > div #locations ul li section {
 /* =============
     Images
 ============= */
+@media (min-width: 1440px) {
+  #images {
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: ". images .";
+  }
+}
 @media (min-width: 768px) {
   #images ul {
     display: grid;
@@ -521,11 +559,37 @@ footer > div #locations ul li section {
 }
 @media (min-width: 1024px) {
   #images ul {
-    grid-template-columns: 50% auto;
+    grid-template-columns: 65% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #images ul {
+    grid-template-columns: 60% auto;
+    grid-template-areas: "gr1 gr2" "gr1 gr3";
+  }
+}
+@media (min-width: 1440px) {
+  #images ul {
+    grid-area: images;
   }
 }
 #images ul li img {
   width: 100%;
+}
+@media (min-width: 1200px) {
+  #images ul li #gr1 {
+    grid-area: gr1;
+  }
+}
+@media (min-width: 1200px) {
+  #images ul li #gr2 {
+    grid-area: gr2;
+  }
+}
+@media (min-width: 1200px) {
+  #images ul li #gr3 {
+    grid-area: gr3;
+  }
 }
 
 /* =============
@@ -542,6 +606,61 @@ footer > div #locations ul li section {
 /* =============
     Tipsandtricks
 ============= */
-#tipsandtricks ul li img {
+@media (min-width: 768px) {
+  #tipsandtricks article {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". tipsandtricks .";
+  }
+}
+@media (min-width: 1440px) {
+  #tipsandtricks article {
+    grid-template-columns: auto 1440 auto;
+  }
+}
+#tipsandtricks article ul {
+  display: grid;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  #tipsandtricks article ul {
+    grid-area: tipsandtricks;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "a1 a1 a2 a2" "a3 a3 a4 a4" ". a5 a5 .";
+  }
+}
+@media (min-width: 1024px) {
+  #tipsandtricks article ul {
+    grid-area: tipsandtricks;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "a1 a1 a2 a2 a3 a3" ". a4 a4 a5 a5 .";
+  }
+}
+@media (min-width: 768px) {
+  #tipsandtricks article #a1 {
+    grid-area: a1;
+  }
+}
+@media (min-width: 768px) {
+  #tipsandtricks article #a2 {
+    grid-area: a2;
+  }
+}
+@media (min-width: 768px) {
+  #tipsandtricks article #a3 {
+    grid-area: a3;
+  }
+}
+@media (min-width: 768px) {
+  #tipsandtricks article #a4 {
+    grid-area: a4;
+  }
+}
+@media (min-width: 768px) {
+  #tipsandtricks article #a5 {
+    grid-area: a5;
+  }
+}
+#tipsandtricks article li img {
   width: 100%;
 }

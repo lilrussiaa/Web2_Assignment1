@@ -1,19 +1,58 @@
 /* =============
     Footer
 ============= */
-footer{
+footer {
     background-color: #482E54;
-    >div{
-        
-        #locations{
 
-            ul{
-                li{
-                    section{
+    >div {
+
+        display: grid;
+        gap: 16px;
+
+        @include md {
+            grid-template-columns: 50% auto;
+
+            grid-template-areas: " locations subscribe"
+                "social . ";
+        }
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                " locations subscribe social";
+        }
+
+        #locations {
+
+            @include md {
+                grid-area: locations;
+
+            }
+        }
+
+        #locations {
+
+            ul {
+                li {
+                    section {
                         display: grid;
-                        grid-template-columns: 15% auto;
+                        grid-template-columns: 10% auto;
                     }
                 }
+            }
+        }
+
+        #subscribe {
+
+            @include md {
+                grid-area: subscribe;
+            }
+        }
+
+        #social {
+
+            @include md {
+                grid-area: social;
             }
         }
     }

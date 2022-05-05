@@ -1,18 +1,82 @@
 /* =============
     Tipsandtricks
 ============= */
-#tipsandtricks{
+#tipsandtricks {
 
-    #tips-and-tricks-to-playing-title{
+    #tips-and-tricks-to-playing-title {}
 
-    }
+    article {
 
-    ul{
+        @include md {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". tipsandtricks .";
+        }
 
-        li{
-            img{
+        @include xxl {
+            grid-template-columns: auto 1440 auto;
+        }
+
+        ul {
+
+            display: grid;
+            gap: 16px;
+
+            @include md {
+                grid-area: tipsandtricks;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-areas:
+                    "a1 a1 a2 a2"
+                    "a3 a3 a4 a4"
+                    ". a5 a5 .";
+            }
+
+            @include lg {
+                grid-area: tipsandtricks;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-areas:
+                    "a1 a1 a2 a2 a3 a3"
+                    ". a4 a4 a5 a5 .";
+            }
+        }
+
+
+
+        #a1 {
+            @include md {
+                grid-area: a1;
+            }
+        }
+
+        #a2 {
+            @include md {
+                grid-area: a2;
+            }
+        }
+
+        #a3 {
+            @include md {
+                grid-area: a3;
+            }
+        }
+
+        #a4 {
+            @include md {
+                grid-area: a4;
+            }
+        }
+
+        #a5 {
+            @include md {
+                grid-area: a5;
+            }
+        }
+
+        li {
+            img {
                 width: 100%;
             }
         }
     }
+
 }
