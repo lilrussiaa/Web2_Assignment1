@@ -369,6 +369,24 @@ ul li {
   grid-area: grid-global;
 }
 
+.show-for-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .show-for-md {
+    display: block;
+  }
+}
+
+.show-for-lg {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-for-lg {
+    display: block;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -434,12 +452,17 @@ footer > div #locations ul li section {
 #heroandlinks img {
   width: 100%;
 }
-#heroandlinks #tips > div section {
-  display: grid;
-  grid-template-columns: 25% auto;
+@media (min-width: 768px) {
+  #heroandlinks img article {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
 }
-#heroandlinks #tips > div section img {
-  width: 100%;
+#heroandlinks img article #playingtips {
+  background-color: #f4d4ad;
+}
+#heroandlinks img article #cheatsheet {
+  background-color: #c97a68;
 }
 
 /* =============

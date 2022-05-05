@@ -6,20 +6,22 @@
     img {
         width: 100%;
 
-    }
+        article {
 
-    #tips{
-
-        >div{
-            section{
+            @include md{
                 display: grid;
-                grid-template-columns: 25% auto;
+                grid-template-columns: 50% auto;
 
-                img{
-                    width: 100%;
-                }
             }
+
+            #playingtips {
+                background-color: #f4d4ad;
+            }
+
+            #cheatsheet {
+                background-color: #c97a68;
+            }
+
         }
     }
-
 }
