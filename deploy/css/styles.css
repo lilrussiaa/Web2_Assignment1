@@ -452,17 +452,17 @@ footer > div #locations ul li section {
 #heroandlinks img {
   width: 100%;
 }
+#heroandlinks article #playingtips {
+  background-color: #f4d4ad;
+}
+#heroandlinks article #cheatsheet {
+  background-color: #c97a68;
+}
 @media (min-width: 768px) {
-  #heroandlinks img article {
+  #heroandlinks article {
     display: grid;
     grid-template-columns: 50% auto;
   }
-}
-#heroandlinks img article #playingtips {
-  background-color: #f4d4ad;
-}
-#heroandlinks img article #cheatsheet {
-  background-color: #c97a68;
 }
 
 /* =============

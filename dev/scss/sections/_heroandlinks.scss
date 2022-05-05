@@ -5,23 +5,22 @@
 
     img {
         width: 100%;
-
-        article {
-
-            @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
-
-            }
+    }
+        article{
 
             #playingtips {
                 background-color: #f4d4ad;
             }
 
             #cheatsheet {
-                background-color: #c97a68;
+                background-color:#c97a68;
             }
 
+            @include md{
+                display: grid;
+                grid-template-columns: 50% auto;
+
+            }
         }
-    }
+    
 }
