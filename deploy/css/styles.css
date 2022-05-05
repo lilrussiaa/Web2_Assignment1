@@ -595,6 +595,10 @@ footer > div #locations ul li section {
 /* =============
     Search
 ============= */
+#search {
+  display: grid;
+  gap: 16px;
+}
 #search > div section {
   display: grid;
   grid-template-columns: 15% auto;

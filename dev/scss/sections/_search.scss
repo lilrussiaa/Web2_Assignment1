@@ -2,7 +2,12 @@
     Search
 ============= */
 #search{
+
+    display: grid;
+        gap: 16px;
+        
     >div{
+        
         section{
             display: grid;
             grid-template-columns: 15% auto;
