@@ -16,6 +16,11 @@ ul {
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". grid-global .";
 
+    @include xxl{
+        grid-template-columns: auto 1440px auto;
+
+    }
+
     >div {
         grid-area: grid-global;
     }
@@ -32,6 +37,13 @@ ul {
 .show-for-lg{
     display: none;
     @include lg{
+        display: block;
+    }
+}
+
+.show-for-xl{
+    display: none;
+    @include xl{
         display: block;
     }
 }

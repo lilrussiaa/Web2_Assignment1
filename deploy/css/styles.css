@@ -365,6 +365,11 @@ ul li {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". grid-global .";
 }
+@media (min-width: 1440px) {
+  .global-css-grid {
+    grid-template-columns: auto 1440px auto;
+  }
+}
 .global-css-grid > div {
   grid-area: grid-global;
 }
@@ -383,6 +388,15 @@ ul li {
 }
 @media (min-width: 1024px) {
   .show-for-lg {
+    display: block;
+  }
+}
+
+.show-for-xl {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .show-for-xl {
     display: block;
   }
 }
@@ -438,12 +452,33 @@ footer > div #locations ul li section {
 /* =============
     Cards
 ============= */
-.card-content > div {
+#card-content {
   display: grid;
-  grid-template-columns: 75% auto;
+  gap: 24px;
 }
-.card-content > div aside img {
-  width: 100%;
+@media (min-width: 768px) {
+  #card-content {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #card-content {
+    grid-template-columns: auto 720px 720px auto;
+    grid-template-areas: ". parts tools .";
+  }
+}
+@media (min-width: 1440px) {
+  #card-content #parts {
+    grid-area: tools;
+  }
+}
+@media (min-width: 1440px) {
+  #card-content #tools {
+    grid-area: parts;
+  }
+}
+#card-content .card-content {
+  background-color: #482e54;
 }
 
 /* =============
@@ -452,22 +487,43 @@ footer > div #locations ul li section {
 #heroandlinks img {
   width: 100%;
 }
-#heroandlinks article #playingtips {
-  background-color: #f4d4ad;
-}
-#heroandlinks article #cheatsheet {
-  background-color: #c97a68;
-}
 @media (min-width: 768px) {
   #heroandlinks article {
     display: grid;
     grid-template-columns: 50% auto;
   }
 }
+#heroandlinks article #playingtips {
+  background-color: #f4d4ad;
+}
+@media (min-width: 1440px) {
+  #heroandlinks article #playingtips {
+    grid-template-columns: auto 720px 16px;
+  }
+}
+#heroandlinks article #cheatsheet {
+  background-color: #c97a68;
+}
+@media (min-width: 1440px) {
+  #heroandlinks article #cheatsheet {
+    grid-template-columns: 16px 720px auto;
+  }
+}
 
 /* =============
     Images
 ============= */
+@media (min-width: 768px) {
+  #images ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #images ul {
+    grid-template-columns: 50% auto;
+  }
+}
 #images ul li img {
   width: 100%;
 }
