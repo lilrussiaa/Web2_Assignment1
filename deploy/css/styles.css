@@ -434,10 +434,6 @@ textarea {
 header {
   background-color: #482E54;
 }
-header > div section img {
-  width: 36%;
-}
-
 /* =============
     Footer
 ============= */
@@ -468,6 +464,12 @@ footer > div {
 footer > div #locations ul li section {
   display: grid;
   grid-template-columns: 10% auto;
+}
+footer > div #subscribe input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
 }
 @media (min-width: 768px) {
   footer > div #subscribe {
@@ -527,6 +529,12 @@ footer > div #locations ul li section {
 #heroandlinks article #playingtips {
   background-color: #f4d4ad;
 }
+#heroandlinks article #playingtips button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+}
 @media (min-width: 1440px) {
   #heroandlinks article #playingtips {
     grid-template-columns: auto 720px 16px;
@@ -559,7 +567,8 @@ footer > div #locations ul li section {
 }
 @media (min-width: 1024px) {
   #images ul {
-    grid-template-columns: 65% auto;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "gr1 gr2" "gr1 gr2";
   }
 }
 @media (min-width: 1200px) {
@@ -577,17 +586,17 @@ footer > div #locations ul li section {
   width: 100%;
 }
 @media (min-width: 1200px) {
-  #images ul li #gr1 {
+  #images ul #gr1 {
     grid-area: gr1;
   }
 }
 @media (min-width: 1200px) {
-  #images ul li #gr2 {
+  #images ul #gr2 {
     grid-area: gr2;
   }
 }
 @media (min-width: 1200px) {
-  #images ul li #gr3 {
+  #images ul #gr3 {
     grid-area: gr3;
   }
 }
@@ -596,15 +605,30 @@ footer > div #locations ul li section {
     Search
 ============= */
 #search {
-  display: grid;
   gap: 16px;
 }
-#search > div section {
-  display: grid;
-  grid-template-columns: 15% auto;
+#search > div {
+  padding: 16px;
 }
-#search > div section img {
+#search > div form {
+  display: flex;
+}
+@media (min-width: 1440px) {
+  #search > div form {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#search > div form input {
   width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: none;
+}
+#search > div form button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }
 
 /* =============
@@ -619,7 +643,7 @@ footer > div #locations ul li section {
 }
 @media (min-width: 1440px) {
   #tipsandtricks article {
-    grid-template-columns: auto 1440 auto;
+    grid-template-columns: auto 1440px auto;
   }
 }
 #tipsandtricks article ul {

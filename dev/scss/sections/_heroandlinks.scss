@@ -16,6 +16,12 @@
             #playingtips {
                 background-color: #f4d4ad;
 
+                button{
+                    border: none;
+                    padding: 0;
+                    margin: 0;
+                    background-color: transparent;
+                   }
                 @include xxl{
                     // grid-template-columns: auto 1440px auto;
 
