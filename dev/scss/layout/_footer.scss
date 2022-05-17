@@ -2,12 +2,12 @@
     Footer
 ============= */
 footer {
-    background-color: #482E54;
+    background-color: var(--purple);
 
     >div {
 
         display: grid;
-        gap: 16px;
+        gap: 15px;
 
         @include md {
             grid-template-columns: 50% auto;

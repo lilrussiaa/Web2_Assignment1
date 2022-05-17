@@ -2,6 +2,16 @@
     Buttons
 ============= */
 button{
-    margin: 0;
-    padding: 0;
+    margin:15px 15px;
+    padding: 9px 12px;
+}
+.tan-button{
+    background-color: var(--tan);
+    border: none;
+    border-radius: 8px;
+    color: var(--purple);
+    font-size: rem-calc(18);
+    font-weight: 100;
+    padding: 12px;
+
 }

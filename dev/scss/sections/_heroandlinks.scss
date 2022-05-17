@@ -6,40 +6,74 @@
     img {
         width: 100%;
     }
-        article{
 
-            @include md{
-                display: grid;
-                grid-template-columns: 50% auto;
+    article {
 
+        color: var(--white);
+
+
+        @include md {
+            display: grid;
+            grid-template-columns: 33% auto;
+
+        }
+        #playingtips {
+            background-color: var(--tan);
+            padding: 15px;
+
+
+            h2 {
+                color: var(--purple);
             }
-            #playingtips {
-                background-color: #f4d4ad;
 
-                button{
-                    border: none;
-                    padding: 0;
-                    margin: 0;
-                    background-color: transparent;
-                   }
-                @include xxl{
-                    // grid-template-columns: auto 1440px auto;
+            button {
+                border: none;
+                background-color: transparent;
+                color: var(--purple);
+                font-size: rem-calc(24);
+                font-weight: 500;
 
-                    grid-template-columns: auto 720px 15px;
+                img {
+                    width: 61px 20px;
+
                 }
             }
 
-            #cheatsheet {
-                background-color:#c97a68;
+            @include xxl {
 
-                @include xxl{
-                    // grid-template-columns: auto 1440px auto;
 
-                    grid-template-columns: 15px 720px auto;
+                grid-template-columns: auto 720px 15px;
+            }
+        }
+
+        #cheatsheet {
+            background-color: var(--orange);
+            padding: 15px;
+
+            button {
+                border: none;
+                padding: 0;
+                margin: 15px;
+                background-color: transparent;
+                font-size: rem-calc(24);
+                font-weight: 300;
+
+
+                p {
+                    text-align: left;
+                    text-decoration-line: underline;
                 }
+
             }
 
-            
-         }
-    
+            @include xxl {
+                // grid-template-columns: auto 1440px auto;
+
+                grid-template-columns: 15px 720px auto;
+            }
+        }
+
+
+    }
+
 }

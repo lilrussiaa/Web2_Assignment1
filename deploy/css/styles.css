@@ -434,8 +434,18 @@ p {
     Buttons
 ============= */
 button {
-  margin: 0;
-  padding: 0;
+  margin: 15px 15px;
+  padding: 9px 12px;
+}
+
+.tan-button {
+  background-color: var(--tan);
+  border: none;
+  border-radius: 8px;
+  color: var(--purple);
+  font-size: 1.125rem;
+  font-weight: 100;
+  padding: 12px;
 }
 
 /* =============
@@ -474,11 +484,11 @@ header > div img {
     Footer
 ============= */
 footer {
-  background-color: #482E54;
+  background-color: var(--purple);
 }
 footer > div {
   display: grid;
-  gap: 16px;
+  gap: 15px;
 }
 @media (min-width: 768px) {
   footer > div {
@@ -524,6 +534,8 @@ footer > div #subscribe input {
 #card-content-container {
   display: grid;
   gap: 24px;
+  padding: 15px;
+  margin: 15px;
 }
 @media (min-width: 768px) {
   #card-content-container {
@@ -536,18 +548,44 @@ footer > div #subscribe input {
     grid-template-areas: ". parts tools .";
   }
 }
+#card-content-container #parts {
+  background-color: var(--purple);
+  padding: 15px;
+  margin: 15px;
+}
+#card-content-container #parts h2 {
+  color: var(--tan);
+  font-size: rel-calc(27);
+  font-weight: 600;
+}
 @media (min-width: 1440px) {
   #card-content-container #parts {
     grid-area: parts;
   }
+}
+#card-content-container #parts img {
+  border-radius: 100%;
+}
+#card-content-container #tools {
+  background-color: var(--purple);
+  padding: 15px;
+  margin: 15px;
 }
 @media (min-width: 1440px) {
   #card-content-container #tools {
     grid-area: tools;
   }
 }
+#card-content-container #tools h2 {
+  color: var(--tan);
+  font-size: rel-calc(27);
+  font-weight: 600;
+}
+#card-content-container #tools img {
+  border-radius: 100%;
+}
 #card-content-container .card-content {
-  background-color: #482e54;
+  background-color: var(--purples);
 }
 
 /* =============
@@ -556,20 +594,31 @@ footer > div #subscribe input {
 #heroandlinks img {
   width: 100%;
 }
+#heroandlinks article {
+  color: var(--white);
+}
 @media (min-width: 768px) {
   #heroandlinks article {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 33% auto;
   }
 }
 #heroandlinks article #playingtips {
-  background-color: #f4d4ad;
+  background-color: var(--tan);
+  padding: 15px;
+}
+#heroandlinks article #playingtips h2 {
+  color: var(--purple);
 }
 #heroandlinks article #playingtips button {
   border: none;
-  padding: 0;
-  margin: 0;
   background-color: transparent;
+  color: var(--purple);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#heroandlinks article #playingtips button img {
+  width: 61px 20px;
 }
 @media (min-width: 1440px) {
   #heroandlinks article #playingtips {
@@ -577,7 +626,20 @@ footer > div #subscribe input {
   }
 }
 #heroandlinks article #cheatsheet {
-  background-color: #c97a68;
+  background-color: var(--orange);
+  padding: 15px;
+}
+#heroandlinks article #cheatsheet button {
+  border: none;
+  padding: 0;
+  margin: 15px;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+#heroandlinks article #cheatsheet button p {
+  text-align: left;
+  text-decoration-line: underline;
 }
 @media (min-width: 1440px) {
   #heroandlinks article #cheatsheet {
