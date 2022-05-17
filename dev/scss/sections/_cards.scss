@@ -42,7 +42,7 @@
         background-color: var(--purple);
         padding: 15px;
         margin: 15px;
-        
+
         @include xxl {
             grid-area: tools;
         }
@@ -60,7 +60,7 @@
     }
 
     .card-content {
-        background-color: var(--purples)
+        background-color: var(--purple)
         
     }
 }
