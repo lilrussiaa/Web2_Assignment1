@@ -447,7 +447,7 @@ footer > div {
 @media (min-width: 768px) {
   footer > div {
     grid-template-columns: 50% auto;
-    grid-template-areas: " locations subscribe" "social . ";
+    grid-template-areas: " locations subscribe" " locations social";
   }
 }
 @media (min-width: 1024px) {
@@ -485,32 +485,32 @@ footer > div #subscribe input {
 /* =============
     Cards
 ============= */
-#card-content {
+#card-content-container {
   display: grid;
   gap: 24px;
 }
 @media (min-width: 768px) {
-  #card-content {
+  #card-content-container {
     grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1440px) {
-  #card-content {
+  #card-content-container {
     grid-template-columns: auto 720px 720px auto;
     grid-template-areas: ". parts tools .";
   }
 }
 @media (min-width: 1440px) {
-  #card-content #parts {
-    grid-area: tools;
-  }
-}
-@media (min-width: 1440px) {
-  #card-content #tools {
+  #card-content-container #parts {
     grid-area: parts;
   }
 }
-#card-content .card-content {
+@media (min-width: 1440px) {
+  #card-content-container #tools {
+    grid-area: tools;
+  }
+}
+#card-content-container .card-content {
   background-color: #482e54;
 }
 
@@ -573,7 +573,7 @@ footer > div #subscribe input {
 }
 @media (min-width: 1200px) {
   #images ul {
-    grid-template-columns: 60% auto;
+    grid-template-columns: 50% auto;
     grid-template-areas: "gr1 gr2" "gr1 gr3";
   }
 }

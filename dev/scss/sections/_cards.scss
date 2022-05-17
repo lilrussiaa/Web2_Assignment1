@@ -2,7 +2,7 @@
     Cards
 ============= */
 
-#card-content {
+#card-content-container {
 
     display: grid;
     gap: 24px;
@@ -13,18 +13,18 @@
 
     @include xxl {
         grid-template-columns: auto 720px 720px auto;
-        grid-template-areas:". parts tools .";
+        grid-template-areas: ". parts tools .";
     }
 
     #parts {
-@include xxl{
-    grid-area: tools;
-}
+        @include xxl {
+            grid-area: parts;
+        }
     }
 
     #tools {
-        @include xxl{
-            grid-area: parts;
+        @include xxl {
+            grid-area: tools;
         }
     }
 
@@ -32,4 +32,3 @@
         background-color: #482e54;
     }
 }
-

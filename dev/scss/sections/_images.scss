@@ -14,24 +14,24 @@
         @include md {
             display: grid;
             grid-template-columns: 50% auto;
-         
+
         }
 
         @include lg {
             grid-template-columns: 50% auto;
-            grid-template-areas: 
-            "gr1 gr2"
-            "gr1 gr2";
+            grid-template-areas:
+                "gr1 gr2"
+                "gr1 gr2";
         }
 
         @include xl {
-            grid-template-columns: 60% auto;
+            grid-template-columns: 50% auto;
             grid-template-areas:
                 "gr1 gr2"
                 "gr1 gr3";
         }
 
-        @include xxl{
+        @include xxl {
             grid-area: images;
         }
 
