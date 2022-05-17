@@ -3,14 +3,17 @@
 ============= */
 #search{
 
-        gap: 16px;
+
         
     >div{
-        padding: 16px;
+        padding: 15px;
+
         form{
-            // display: grid;
-            // grid-template-columns: 15% auto;
+
             display: flex;
+            width: 349px;
+            padding: 12px;
+           
             
             @include xxl {
                 grid-template-columns: auto 1440px auto;
@@ -18,21 +21,37 @@
 
             input{
                 width: 100%;
-                padding: 20px;
+                padding: 9px;
                 box-sizing: border-box;
                 border: none;
+                border-bottom: 2px solid var(--orange);
             }
 
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: var(--purple);
+                opacity: 1; /* Firefox */
+              }
+              
+              :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color: var(--purple);
+              }
+              
+              ::-ms-input-placeholder { /* Microsoft Edge */
+                color: var(--purple);
+              }
             button{
 
                 border: none;
-                padding: 0;
+                padding: 3px;
                 margin: 0;
+                border: none;
                 background-color: transparent;
+                border-bottom: 2px solid var(--orange);
 
-                // img{
-                //     width: 50%;
-                // }
+                img{
+                    width: 33px;
+                    padding: 15px;
+                }
             }
         }
     }

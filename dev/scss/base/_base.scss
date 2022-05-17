@@ -13,7 +13,7 @@ ul {
 
 .global-css-grid {
     display: grid;
-    grid-template-columns: 16px auto 16px;
+    grid-template-columns: 15px auto 15px;
     grid-template-areas: ". grid-global .";
 
     @include xl{
@@ -24,6 +24,10 @@ ul {
     >div {
         grid-area: grid-global;
     }
+}
+.content-spacing-top{
+
+    margin-top: 30px;
 }
 
 

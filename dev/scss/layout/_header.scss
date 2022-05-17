@@ -2,9 +2,13 @@
     Header
 ============= */
 header{
-    background-color: #482E54;
+    background-color: var(--purple);
+    padding: 12px 0 18px ;
     
     >div{
        
+        img{
+            width: 141px;
+        }
     }
 }
