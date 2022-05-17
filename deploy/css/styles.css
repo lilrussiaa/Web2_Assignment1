@@ -573,7 +573,7 @@ footer > div #subscribe input {
 }
 @media (min-width: 1200px) {
   #images ul {
-    grid-template-columns: 50% auto;
+    grid-template-columns: 60% auto;
     grid-template-areas: "gr1 gr2" "gr1 gr3";
   }
 }
